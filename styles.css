@@ -349,13 +349,11 @@ body {
   }
 
   .column.side.contact {
-    text-align: left;
     color: #234c8a;
     width: 40%;
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: left;
-    width: 50%; 
   }
 
   .column.side.singular {
