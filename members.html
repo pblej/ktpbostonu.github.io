@@ -1,291 +1,382 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
-<!--Header-->
-  <head>
+    <!--Header-->
+    <head>
 
-    <!--Import MetaData-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--HTML BoilerPlate-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kappa Theta Pi: Lambda Chapter</title>
 
-    <!--Web Title-->
-    <title>Kappa Theta Pi: Lambda Chapter</title>
+        <!--Set Favicon-->
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <!--Linking styles.css-->
+        <link rel="stylesheet" href="/styles.css">
 
-    <!--Importing Styles-->
-    <link rel="stylesheet" href="styles.css">
+        <!--Linking Google Fonts API-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital,wght@0,500;0,800;1,800&family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital,wght@0,500;0,800;1,800&family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">
-    
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital,wght@0,500;0,800;1,800&family=Playfair+Display:ital,wght@1,800&display=swap');
-    </style>
-  </head>
+    </head>
 
-  <!--Body-->
-  <body>
+    <!--Body-->
+    <body>
+        
+        <!--Resposive NavBar-->
+        <nav class="nav_container">
 
-    <!--Navbar-->
-    <nav class="navbar">
-        <div class="navbar__container">
-
-            <!--Navbar Mobile Menu Drop Down Button-->
-            <div class="navbar__toggle" id="mobile-menu">
+            <!--Allocating Top Right Hamburger/X-->
+            <div class="nav_toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
 
-            <!--Navbar Menu Items-->
-            <ul class="navbar__menu">
+            <!--Linking Index Page and Subpages in NavBar-->
+            <ul class="nav_menu">
 
-                <li class="navbar__item"><a href="index.html" class="navbar__links">Home</a></li>
+                <li class="nav_item">
+                    <a href="index.html" class="nav_links">Home</a>
+                </li>
 
-                <li class="navbar__item"><a href="/aboutus.html" class="navbar__links">About Us</a></li>
+                <li class="nav_drop">
+                    <button class="dropbtn">About
+                        <i class="fa fa-caret-down"></i>
+                    </button>
 
-                <li class="navbar__item"><a href="/rush.html" class="navbar__links">Rush</a></li>
+                    <div class="drop_content">
+                        <a href="/aboutus.html" class="nav_links">About Us</a>
+                        <a href="/hackathon.html" class="nav_links">About Hackappathon</a>
+                    </div>
+                </li>
 
-                <li class="navbar__item"><a href="/members.html" class="navbar__links">Members</a></li>
+                <li class="nav_item">
+                    <a href="/rush.html" class="nav_links">Rush</a>
+                </li>
 
-                <li class="navbar__item"><a href="/contactus.html" class="navbar__links">Contact Us</a></li>
+                <li class="nav_item">
+                    <a href="/members.html" class="nav_links">Members</a>
+                </li>
+
+                <li class="nav_item">
+                    <a href="/contactus.html" class="nav_links">Contact Us</a>
+                </li>
 
             </ul>
 
+        </nav>
+
+        <div class="members_title">
+            <header class="member_header">
+                <h1>E-Board</h1>
+            </header>
         </div>
 
-    </nav>
+        <div class="members-cards-container">
 
-    <!--Eboard Section-->
-    <div class="row">
-        <div class="members">
-            <h1>E-Board</h1>
-            <div class="members__container">
-                <div class="members__card">
-                    <div class="members__content">
-                        <div class="imgBx">
-                            <img src="images/web-PaulLee.jpeg" alt="" class="image">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="sci">
-                                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contentBx">
-                            <h4>Paul Lee</h4>
-                            <h5>President</h5>
-                        </div>
-                    </div>
+            <a href="https://www.linkedin.com/in/paul-lee-55119725a/">
+                <div class="member_card">
+                    <img src="images/web-PaulLee.jpeg" alt="">
+                    <h2>Paul Lee<br><span style="color: #7ac6d6;">Co-President</span></h2>
                 </div>
-                <div class="members__card">
-                    <div class="members__content">
-                        <div class="imgBx">
-                            <img src="images/web-TyeRobison.jpeg" alt="" class="image">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="sci">
-                                    <a href="https://www.linkedin.com/in/tye-robison-7a2aa9259/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contentBx">
-                            <h4>Tye Robison</h4>
-                            <h5>President</h5>
-                        </div>
-                    </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/tye-robison-7a2aa9259/">
+                <div class="member_card">
+                    <img src="images/web-TyeRobison.jpeg" alt="">
+                    <h2>Tye Robison<br><span style="color: #7ac6d6;">Co-President</span></h2>
                 </div>
-                <div class="members__card">
-                    <div class="members__content">
-                        <div class="imgBx">
-                            <img src="images/web-PatrickBlejwas.jpeg" alt="" class="image">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="sci">
-                                    <a href="https://www.linkedin.com/in/pblej/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contentBx">
-                            <h4>Patrick Blejwas</h4>
-                            <h5>Vice President of Technical Development</h5>
-                        </div>
-                    </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/evan-lapid-077478256/">
+                <div class="member_card">
+                    <img src="images/web-EvanLapid - Copy.jpeg" alt="">
+                    <h2>Evan Lapid<br><span style="color: #7ac6d6;">Co-Vice President of Membership</span></h2>
                 </div>
-                <div class="members__card">
-                    <div class="members__content">
-                        <div class="imgBx">
-                            <img src="images/web-AnissaPatel.jpeg" alt="" class="image">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="sci">
-                                    <a href="https://www.linkedin.com/in/anissa-patel/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contentBx">
-                            <h4>Anissa Patel</h4>
-                            <h5>Vice President of Professional Development</h5>
-                        </div>
-                    </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/jaden-hsiao-b72a7b24b/">
+                <div class="member_card">
+                    <img src="images/web-JadenHsiao.jpeg" alt="">
+                    <h2>Jaden Hsiao<br><span style="color: #7ac6d6;">Co-Vice President of Membership</span></h2>
                 </div>
-                <div class="members__card">
-                    <div class="members__content">
-                        <div class="imgBx">
-                            <img src="images/web-JadenHsiao.jpeg" alt="" class="image">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="sci">
-                                    <a href="https://www.linkedin.com/in/jaden-hsiao-b72a7b24b/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contentBx">
-                            <h4>Jaden Hsiao</h4>
-                            <h5>Vice President of Membership</h5>
-                        </div>
-                    </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/pblej/">
+                <div class="member_card">
+                    <img src="images/web-PatrickBlejwas.jpeg" alt="">
+                    <h2>Patrick Blejwas<br><span style="color: #7ac6d6;">Vice President of Technical Development</span></h2>
                 </div>
-                <div class="members__card">
-                    <div class="members__content">
-                        <div class="imgBx">
-                            <img src="images/web-EvanLapid.jpeg" alt="" class="image">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="sci">
-                                    <a href="https://www.linkedin.com/in/evan-lapid-077478256/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contentBx">
-                            <h4>Evan Lapid</h4>
-                            <h5>Vice President of Membership</h5>
-                        </div>
-                    </div>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/anissa-patel/">
+                <div class="member_card">
+                    <img src="images/web-AnissaPatel - Copy.jpeg" alt="">
+                    <h2>Anissa Patel<br><span style="color: #7ac6d6;">Vice President of Professional Development</span></h2>
                 </div>
-                <div class="members__card">
-                    <div class="members__content">
-                        <div class="imgBx">
-                            <img src="images/web-CamillieHerzog.jpeg" alt="" class="image">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="sci">
-                                    <a href="https://www.linkedin.com/in/camille-kathleen-herzog/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contentBx">
-                            <h4>Camille Herzog</h4>
-                            <h5>Vice President of Marketing</h5>
-                        </div>
-                    </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/peachy-malik-b46a42220/">
+                <div class="member_card">
+                    <img src="images/web-PeachyMalik.jpeg" alt="">
+                    <h2>Peachy Malik<br><span style="color: #7ac6d6;">Vice President of Internal Affairs</span></h2>
                 </div>
-                <div class="members__card">
-                    <div class="members__content">
-                        <div class="imgBx">
-                            <img src="images/web-RylieLove.jpeg" alt="" class="image">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="sci">
-                                    <a href="https://www.linkedin.com/in/rylie-love-6b608224b/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contentBx">
-                            <h4>Rylie Love</h4>
-                            <h5>Vice President of Engagement</h5>
-                        </div>
-                    </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/rylie-love-6b608224b/">
+                <div class="member_card">
+                    <img src="images/web-RylieLove.jpeg" alt="">
+                    <h2>Rylie Love<br><span style="color: #7ac6d6;">Vice President of Engagement</span></h2>
                 </div>
-                <div class="members__card">
-                    <div class="members__content">
-                        <div class="imgBx">
-                            <img src="images/web-GeorgeAudi.jpeg" alt="" class="image">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="sci">
-                                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contentBx">
-                            <h4>George Audi</h4>
-                            <h5>Vice President of Finance</h5>
-                        </div>
-                    </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/camille-kathleen-herzog/">
+                <div class="member_card">
+                    <img src="images/web-CamillieHerzog - Copy.jpeg" alt="">
+                    <h2>Camille Herzog<br><span style="color: #7ac6d6;">Vice President of Marketing</span></h2>
                 </div>
-                <div class="members__card">
-                    <div class="members__content">
-                        <div class="imgBx">
-                            <img src="images/web-PeachyMalik.jpeg" alt="" class="image">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="sci">
-                                    <a href="https://www.linkedin.com/in/peachy-malik-b46a42220/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contentBx">
-                            <h4>Peachy Malik</h4>
-                            <h5>Vice President of Internal Affairs</h5>
-                        </div>
-                    </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/george-audi-83182525a/">
+                <div class="member_card">
+                    <img src="images/web-GeorgeAudi - Copy.jpeg" alt="">
+                    <h2>George Audi<br><span style="color: #7ac6d6;">Vice President of Finances</span></h2>
                 </div>
-            </div>
+            </a>
+
         </div>
-    </div>
 
-    <div class="row">
-        <br>
-        <br>
-    </div>
+        <div class="members_title">
+            <header class="member_header">
+                <h1>Members<br><span style="color: #7ac6d6;">Welcoming Pledge Class Alpha</span></h1>
+            </header>
+        </div>
 
-    <!--Footer-->
-    <div class="footer__container">
-        <section class="social__media">
-          <div class="social__media__wrap">
-            <div class="footer__logo">
-              <a href="/" id="footer__logo">Kappa Theta Pi</a>
+        <div class="small-members-cards-container">
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Matthew Ferianeck</h2>
             </div>
-            <p class="website__rights">© 2022 Kappa Theta Pi Lambda Chapter. All Rights Reserved.</p>
-            <div class="social__icons">
-              <a href="https://www.facebook.com/ktpbostonu" class="social__icon__link" target="_blank"
-                ><i class="fab fa-facebook"></i
-              ></a>
-              <a href="https://instagram.com/ktpbostonu?igshid=YmMyMTA2M2Y" class="social__icon__link"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="https://www.youtube.com/channel/UCnAKU1RtEodVm2EL9m8vyNw" class="social__icon__link"
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a href="https://www.linkedin.com/company/kappa-theta-pi-lambda-chapter/" class="social__icon__link"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-              <a href="https://twitter.com/KappaThetaPiBU" class="social__icon__link"
-                ><i class="fab fa-twitter"></i
-              ></a>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Nathan Pike</h2>
             </div>
-          </div>
-        </section>
-    </div>
 
-    <!--Import JavaScript-->
-	<script src="app.js"></script>
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Griffin Tomko</h2>
+            </div>
 
-    <!--Importing FontAwesome Icons-->
-    <script src="https://kit.fontawesome.com/b7e6b21fa0.js" crossorigin="anonymous"></script>
-  </body>
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Richard Yang</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Victor Verma</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Jenny Yang</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Tiffany Yu</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Eliott Dinfotan</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Carol Riady</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Annie Liang</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Tim McCorry</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Madison McDonald</h2>
+            </div>
+            
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Rohan Kumar</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Beatriz Pérez</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Wyatt Napier</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Ryan Chase</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Sam Offsey</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Yana Pathak</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Andrea Balaguer</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Eric Kim</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Derek Laboy</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Julia Flynn</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Zach Gentile</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Brandon Wong</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Sara Wishner</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Thomas Boles</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Josh Leeds</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Di Chen</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Eric Gulotty</h2>
+            </div>
+
+            <div class="small_member_card">
+                <img src="images/defaultprofile.png" alt="">
+                <h2>Grace Dai</h2>
+            </div>
+
+        </div>
+
+        <!--Responsive Footer-->
+        <footer class="footer_container">
+
+            <div class="footer_content">
+
+                <section class="social_media">
+
+                    <div class="social_media_wrap">
+
+                        <!--Allocating Space for Footer Logo-->
+                        <div class="footer_logo">
+                            <a href="/" aria-label="Homepage" class="footer_logo_link">Kappa Theta Pi</a>
+                        </div>
+
+                        <!--Allocating Space, Importing FontAwesome Icons, and Linking Social Medias-->
+                        <nav class="social_icons">
+
+                            <li class="social_item">
+                                <a href="https://www.facebook.com/ktpbostonu" rel="noopener noreferrer" class="social_icon_link" title="Facebook">
+                                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                            <li class="social_item">
+                                <a href="https://instagram.com/ktpbostonu?igshid=YmMyMTA2M2Y" rel="noopener noreferrer" class="social_icon_link" title="Instagram">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                            <li class="social_item">
+                                <a href="https://www.youtube.com/channel/UCnAKU1RtEodVm2EL9m8vyNw" rel="noopener noreferrer" class="social_icon_link" title="Youtube">
+                                    <i class="fab fa-youtube" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                            <li class="social_item">
+                                <a href="https://www.linkedin.com/company/kappa-theta-pi-lambda-chapter/" rel="noopener noreferrer" class="social_icon_link" title="LinkedIn">
+                                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                            <li class="social_item">
+                                <a href="https://twitter.com/KappaThetaPiBU" rel="noopener noreferrer" class="social_icon_link" title="Twitter">
+                                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                        </nav>
+
+                        <!--Creat Text for Website Rights-->
+                        <p class="website_rights">© 2022 Kappa Theta Pi Lambda Chapter. All Rights Reserved.</p>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </footer>
+        
+        <!--Import app.js-->
+        <script src="app.js"></script>
+
+        <!--Import Icons-->
+        <script src="https://kit.fontawesome.com/b7e6b21fa0.js" crossorigin="anonymous"></script>
+
+    </body>
+
 </html>

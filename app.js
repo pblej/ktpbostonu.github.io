@@ -1,5 +1,5 @@
 const menu = document.querySelector('#mobile-menu')
-const menuLinks = document.querySelector('.navbar__menu')
+const menuLinks = document.querySelector('.nav_menu')
 
 menu.addEventListener('click', function() {
     menu.classList.toggle('is-active')
@@ -21,7 +21,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-var coll = document.getElementsByClassName("collapsible__last");
+var coll = document.getElementsByClassName("collapsible_last");
 var i;
 
 for (i = 0; i < coll.length; i++) {
