@@ -1,197 +1,308 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
+    <!--Header-->
     <head>
 
-        <title>Hackappathon 2023</title>
-
+        <!--HTML BoilerPlate-->
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kappa Theta Pi: Lambda Chapter</title>
 
-        <!--Importing CSS-->
-        <link rel="stylesheet" href="styles2.css"></link>
+        <!--Set Favicon-->
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+        <!--Linking styles.css-->
+        <link rel="stylesheet" href="styles2.css">
+
+        <!--Linking Google Fonts API-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital,wght@0,500;0,800;1,800&family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">
 
     </head>
 
+    <!--Body-->
     <body>
+        
+        <!--Resposive NavBar-->
+        <nav class="nav_container">
 
-        <div class="bar">
-
-            <div class="year">
-                <h1>2023</h1>
+            <!--Allocating Top Right Hamburger/X-->
+            <div class="nav_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
 
-            <div class="logo">
-                <img src="images/logo1.png"></img>
+            <!--Linking Index Page and Subpages in NavBar-->
+            <ul class="nav_menu">
+
+                <li class="nav_item">
+                    <a href="index.html" class="nav_links">Home</a>
+                </li>
+
+                <li class="nav_drop">
+                    <button class="dropbtn">About
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+
+                    <div class="drop_content">
+                        <a href="/aboutus.html" class="nav_links">About Us</a>
+                        <a href="/hackathon.html" class="nav_links">About Hackappathon</a>
+                    </div>
+                </li>
+
+                <li class="nav_item">
+                    <a href="/rush.html" class="nav_links">Rush</a>
+                </li>
+
+                <li class="nav_item">
+                    <a href="/members.html" class="nav_links">Members</a>
+                </li>
+
+                <li class="nav_item">
+                    <a href="/contactus.html" class="nav_links">Contact Us</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!--index.html Hero Section-->
+        <div class="hero-image">
+
+            <div class="hero-text">
+
+                <img src="images/logofinal1.png" alt="">
+
             </div>
-            
+
         </div>
 
-        <div class="hero">
+        <hr class="solid">
 
-            <div class="backgroundimg"></div>
+        <section class="dei_container">
 
-           <div class="leftgroup">
-                <img src="images/KTPKTP.png"></img>
-                <div class="elipse"></div>
-           </div>
-
-           <div class="rightgroup">
-                <h1>HACKAPPATHON</h1>
-                <h2>Come back in</h2>
-                <div id="countdown"></div>
-                <h2>for more info!</h2>
-                <a class="button" href="index.html">Back to Home</a>
-           </div>
-
-        </div>
-
-        <!--<div class="service">
-            <div class="title">
-                <h2>Our Mission</h2>
-            </div>
-
-            <div class="box">
-                <div class="card">
-                    <i class="fa-solid fa-arrow-trend-up"></i>
-                    <h5>Innovation</h5>
-                    <div class="pra">
-                        <p>Hackathons across the globe harness and incubate talent by bringing in motivated young minds to a space that's perfectly tuned for technological creativity. We hope Hackappathon will be no different, and challenge you, push you, and excite you more than anything to innovate.</p>
-
-                        <p style="text-align: center;">
-                            <a class="button" href="#">Read More</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-people-arrows"></i>
-                    <h5>Collaboration</h5>
-                    <div class="pra">
-                        <p>It's no doubt that events like these bring in a talented, multidisciplined, and diverse set of minds to challenge the toughest problems. Doing so though requires collaboration and teamwork. We at Kappa Theta Pi are dedicated to creating a collaborative space that`s tailored to helping you succeed.</p>
-
-                        <p style="text-align: center;">
-                            <a class="button" href="#">Read More</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-network-wired"></i>
-                    <h5>Development</h5>
-                    <div class="pra">
-                        <p>Often too much focus is put on the technical aspects of these kinds of events, but here it's of the utmost importance to promote networking, teamwork, and presentation skills. We do this though, not by ignoring the importance of workshops and technical support. We focus on personal development in general.</p>
-
-                        <p style="text-align: center;">
-                            <a class="button" href="#">Read More</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>-->
-
-        <!--<div class="theme">
-            <div class="title">
-                <h2>The 2023 Theme is...</h2>
-                <img src="images/Artboard 1.png"></img>
-            </div>
-            
-            <div class="box">
-                <div class="tcard">
-                    <i class="fa-solid fa-school"></i>
-                    <h5>What is Student Life?</h5>
-                    <div class="tpra">
-                            <p>As college students yourselves, you have a unique perspective on the challenges and opportunities that arise in student life. With this prompt, we're asking you to draw from your own experiences to create something innovative and exciting. Whether you're interested in solving a problem, filling a digital void, or creating something purely entertaining, there are countless ways to approach this challenge.</p>
-                            <br>
-                            <p>Think about the problems you've encountered as students: Are there issues with the registration process or course selection? Do you struggle to manage your time effectively or balance your coursework with other obligations? Are there gaps in the resources and support available to students on your campus? Consider how you could use technology to address these issues in a new and innovative way.</p>
-                            <br>
-                            <p>But don't limit yourself to problem-solving! Maybe you've noticed a “digital void” in the world of student life - something missing that you think could be filled by a creative digital solution. Or maybe you have an idea for a fun and engaging project that doesn't necessarily solve a problem but is entertaining and exciting in its own right.</p>
-                            <br>
-                            <p>The possibilities are endless, and we're excited to see what you all come up with. Remember, the key is to draw from your own experiences and think creatively about how technology can be used to enhance the student experience. So get started, and let your imaginations run wild!</p>
-                            <br>
-                        <p style="text-align: center;">
-                            <a class="button" href="#">Pre-Intrest Form</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>-->
-
-        <!--<div class="faq-section">
-            <div class="title">
-                <h2>Frequently Asked Questions</h2>
-            </div>
-            <div class="faq-column">
-              <h3>by Students</h3>
+            <div class="dei_item">
                 
-              <details>
-                <summary>What is a hackathon?</summary>
-                A hackathon is an innovation marathon. Students come together to build innovative software and hardware hacks over the course of  24-48 hours. The event's like these are designed to be beginner friendly and participation is open to all majors.
-              </details>
-              <details>
-                <summary>How much does it cost to attend?</summary>
-                Totally free, but pre-registration and later applications are necessary to attend.
-              </details>
-              <details>
-                <summary>Do I need to be a brother of Kappa Theta Pi to attend?</summary>
-                No, you do not need to be a brother of Kappa Theta Pi to participate, though you do need to be enrolled at Boston University to be eligible.
-              </details>
-              <details>
-                <summary>Is there a code of conduct?</summary>
-                Yes, and it can be found here.
-              </details>
-            </div>
-            <div class="faq-column">
-              <h3>by Sponsors</h3>
-              <details>
-                <summary>Who is Kappa Theta Pi?</summary>
-                Kappa Theta Pi is a professional co-ed technology fraternity. We were founded in 2011 at the University of Michigan. If you want to learn more about this particular chapter, please go over to our website ktpbostonu.com.
-              </details>
-              <details>
-                <summary>Is Hackappathon looking for sponsors for this event?</summary>
-                Yes, Hackappathon is currently accepting sponsors for the event. If you are interested in becoming a sponsor, please contact us at ktpbostonu@gmail.com. We would be happy to provide you with more details about sponsorship opportunities and benefits.
-              </details>
-              <details>
-                <summary>What kind of sponsorship participation is Hackappathon looking for?</summary>
-                At Hackappathon we welcome all types of sponsors who are interested in supporting our event and helping to create a valuable experience for our participants. If you would like to discuss sponsorship packages please contact us at ktpbostonu@gmail.com.
-              </details>
-            </div>
-          </div>-->          
+                <div class="dei_content">
 
-        <div class="footer__container">
-            <section class="social__media">
-              <div class="social__media__wrap">
-                <div class="footer__logo">
-                  <a href="/" id="footer__logo">Kappa Theta Pi</a>
+                    <header class="dei_header">
+
+                        <h1>About HackKTP</h1>
+
+                        <h2>Boston, MA - October 2023</h2>
+
+                        <p>Welcome to the first-ever HackKTP, the annual hackathon hosted by Kappa Theta Pi: Lambda. This event is dedicated to innovation, collaboration, and development within the tech industry.</p>
+                        
+                        <p>Our fraternity understands the importance of utilizing the technology we have at our disposal to make a positive impact on the world. With that said, HackKTP is one of the many ways we give back to and empower members of our community.</p>
+
+                        <p>As a hackathon, HackKTP is a space that draws multidisciplinary talent to solve complex problems and create powerful solutions. We believe the best ideas come from working together and learning from each other. Beyond collaboration and innovation, we encourage development. Development to us encompasses everything technical to everything professional, and we hope to foster a space perfect for networking as well as adequately provide the technical resources so our participants can succeed.</p>
+
+                        <p>HackKTP will take place in the middle of the fall semester, and we welcome all Boston University students to pre-register for the hackathon using the form below. Whether you’re an experienced coder or a newcomer to the tech industry, HackKTP is the perfect opportunity to collaborate with like-minded individuals and work on innovative projects.</p>
+
+                        <p>We also would like to extend an invitation to organizations interested in sponsoring our event to reach out to us via the button below. As a sponsor, you will have the opportunity to connect with a talented pool of students and support this student-led event.</p>
+
+                        <p>Thank you for considering HackKTP and we look forward to seeing you at our next event!</p>
+
+                        <div class="buttons">
+                            <button onclick="window.location.href='https://forms.gle/ma49gXbHLaXiEEGz7'" class="button">Pre-Register</button>
+                            <a href="mailto:ktpbostonu@gmail.com"><button class="button">Sponor</button></a>
+                        </div>
+
+                    </header>
+
                 </div>
-                <p class="website__rights">© 2022 Kappa Theta Pi Lambda Chapter. All Rights Reserved.</p>
-                <div class="social__icons">
-                  <a href="https://www.facebook.com/ktpbostonu" class="social__icon__link" target="_blank"
-                    ><i class="fab fa-facebook"></i
-                  ></a>
-                  <a href="https://instagram.com/ktpbostonu?igshid=YmMyMTA2M2Y" class="social__icon__link"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                  <a href="https://www.youtube.com/channel/UCnAKU1RtEodVm2EL9m8vyNw" class="social__icon__link"
-                    ><i class="fab fa-youtube"></i
-                  ></a>
-                  <a href="https://www.linkedin.com/company/kappa-theta-pi-lambda-chapter/" class="social__icon__link"
-                    ><i class="fab fa-linkedin"></i
-                  ></a>
-                  <a href="https://twitter.com/KappaThetaPiBU" class="social__icon__link"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                </div>
-              </div>
-            </section>
+
+            </div>
+
+        </section>
+
+        <hr class="solid">
+
+        <div class="pillar_title">
+            <header class="pillar_header">
+                <h1>Pillars</h1>
+            </header>
         </div>
 
-        <!--Importing JS-->
-        <script src="app2.js"></script>
+        <div class="pillars-cards-container">
+
+            <div class="pillar_card">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h2>Innovation</h2>
+                <p>Hackathons across the globe harness and incubate talent by bringing in motivated young minds to a space that's perfectly tuned for technological creativity. We hope Hackappathon will be no different, and challenge you, push you, and excite you more than anything to innovate.</p>
+            </div>
+            <div class="pillar_card">
+                <i class="fa-solid fa-people-group"></i>
+                <h2>Collaboration</h2>
+                <p>It's no doubt that events like these bring in a talented, multidisciplined, and diverse set of minds to challenge the toughest problems. Doing so though requires collaboration and teamwork. We at Kappa Theta Pi are dedicated to creating a collaborative space that's tailored to helping you succeed.</p>
+            </div>
+            <div class="pillar_card">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                <h2>Development</h2>
+                <p>Often too much focus is put on the technical aspects of these kinds of events, but here it's of the utmost importance to promote networking, teamwork, and presentation skills. We do this though, not by ignoring the importance of workshops and technical support. We focus on personal development in general.</p>
+            </div>
+        </div>
+
+        <hr class="solid">
+
+        <div class="pillar_title">
+            <header class="pillar_header">
+                <h1>FAQ</h1>
+            </header>
+        </div>
+
+        <section class="pres_container">
+
+            <div class="pres_item">
+
+                <div class="pres_img">
+
+                    <img src="/images/Workshop 7.jpg">
+
+                </div>
+
+            </div>
+
+            <div class="pres_item">
+
+                <div class="pres_content">
+
+                    <header class="pres_header">
+                    
+                        <h2>What is a hackathon?</h2>
+                        <hr class="feature">
+                        <p>A hackathon is an innovation marathon. Students come together to build innovative software and hardware hacks over the course of  24-48 hours. The event's like these are designed to be beginner friendly and participation is open to all majors.</p>
+
+                        <h2>How much does it cost to attend?</h2>
+                        <hr class="feature">
+                        <p>Totally free, but pre-registration or applications are necessary to attend.</p>
+
+                        <h2>Do I need to be a brother of Kappa Theta Pi to attend?</h2>
+                        <hr class="feature">
+                        <p>As of right now to participate in HackKTP you need to be a student of Boston University, but you do not need to be a brother!</p>
+
+                        <h2>Is there a code of conduct?</h2>
+                        <hr class="feature">
+                        <p>Yes, it can be found here.</p>
+
+
+                    </header>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="pres_container">
+
+            <div class="pres_item">
+
+                <div class="pres_content">
+
+                    <header class="pres_header">
+
+                        <h2>Who is Kappa Theta Pi?</h2>
+                        <hr class="feature">
+                        <p>Kappa Theta Pi is a professional co-ed technology fraternity. We were founded in 2011 at the University of Michigan. If you want to learn more about this particular chapter, please go over to our website ktpbostonu.com.</p>
+
+                        <h2>Is Hackappathon looking for sponsors for this event?</h2>
+                        <hr class="feature">
+                        <p>Yes, Hackappathon is currently accepting sponsors for the event. If you are interested in becoming a sponsor, please contact us at ktpbostonu@gmail.com. We would be happy to provide you with more details about sponsorship opportunities and benefits.</p>
+
+                        <h2>What kind of sponsorship participation is Hackappathon looking for?</h2>
+                        <hr class="feature">
+                        <p>At Hackappathon we welcome all types of sponsors who are interested in supporting our event and helping to create a valuable experience for our participants. If you would like to discuss sponsorship packages please contact us at ktpbostonu@gmail.com.</p>
+
+                    </header>
+
+                </div>
+
+            </div>
+
+            <div class="pres_item">
+
+                <div class="pres_img">
+
+                    <img src="/images/Workshop 6.jpg">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--Responsive Footer-->
+        <footer class="footer_container">
+
+            <div class="footer_content">
+
+                <section class="social_media">
+
+                    <div class="social_media_wrap">
+
+                        <!--Allocating Space for Footer Logo-->
+                        <div class="footer_logo">
+                            <a href="/" aria-label="Homepage" class="footer_logo_link">Kappa Theta Pi</a>
+                        </div>
+
+                        <!--Allocating Space, Importing FontAwesome Icons, and Linking Social Medias-->
+                        <nav class="social_icons">
+
+                            <li class="social_item">
+                                <a href="https://www.facebook.com/ktpbostonu" rel="noopener noreferrer" class="social_icon_link" title="Facebook">
+                                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                            <li class="social_item">
+                                <a href="https://instagram.com/ktpbostonu?igshid=YmMyMTA2M2Y" rel="noopener noreferrer" class="social_icon_link" title="Instagram">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                            <li class="social_item">
+                                <a href="https://www.youtube.com/channel/UCnAKU1RtEodVm2EL9m8vyNw" rel="noopener noreferrer" class="social_icon_link" title="Youtube">
+                                    <i class="fab fa-youtube" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                            <li class="social_item">
+                                <a href="https://www.linkedin.com/company/kappa-theta-pi-lambda-chapter/" rel="noopener noreferrer" class="social_icon_link" title="LinkedIn">
+                                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                            <li class="social_item">
+                                <a href="https://twitter.com/KappaThetaPiBU" rel="noopener noreferrer" class="social_icon_link" title="Twitter">
+                                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                        </nav>
+
+                        <!--Creat Text for Website Rights-->
+                        <p class="website_rights">© 2022 Kappa Theta Pi Lambda Chapter. All Rights Reserved.</p>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </footer>
+        
+        <!--Import app.js-->
+        <script src="app.js"></script>
+
+        <!--Import Icons-->
+        <script src="https://kit.fontawesome.com/b7e6b21fa0.js" crossorigin="anonymous"></script>
 
     </body>
-
-    <script src="https://kit.fontawesome.com/b7e6b21fa0.js" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
 
 </html>

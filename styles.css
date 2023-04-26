@@ -414,6 +414,7 @@ body {
 
 .pillar_title h1 {
     text-align: center;
+    color: #234c8a;
 }
 
 .pillars-cards-container {
@@ -677,6 +678,11 @@ body {
     justify-content: center; /* changed from center */
     align-items: flex-start; /* changed from center */
     margin-bottom: 30px;
+}
+
+.small-members-cards-container a {
+    text-decoration: none;
+    color: #234c8a;
 }
 
 .small_member_card {
