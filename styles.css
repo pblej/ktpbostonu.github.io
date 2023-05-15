@@ -263,13 +263,16 @@ body {
 }
 
 .pres_img {
+    margin-top: 15%;
     text-align: center;
 }
 
 .pres_img img {
+    border-radius: 10px;
     max-width: 100%;
     height: auto;
     width: 80%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
 }
   
 .pres_content h1 {
@@ -327,13 +330,16 @@ body {
 }
 
 .hist_img {
+    margin-top: 15%;
     text-align: center;
 }
 
 .hist_img img {
+    border-radius: 10px;
     max-width: 100%;
     height: auto;
     width: 80%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
 }
   
 .hist_content h1 {
