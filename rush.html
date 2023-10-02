@@ -2,208 +2,111 @@
 
 <html lang="en">
 
-    <!--Header-->
-    <head>
+<!-- ADD ALT TO IMGS -->
 
-        <!--HTML BoilerPlate-->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kappa Theta Pi: Lambda Chapter</title>
+<head>
 
-        <!--Set Favicon-->
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--Linking styles.css-->
-        <link rel="stylesheet" href="styles.css"> 
-        <link rel="stylesheet" href="styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 
-        <!--Linking Google Fonts API-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital,wght@0,500;0,800;1,800&family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">
+    <!--Linking over to-->
+    <link rel="stylesheet" href="styles.css">
 
-    </head>
+    <!--Tab Title-->
+    <title>KTP: Boston University</title>
 
-    <!--Body-->
-    <body>
-        
-        <!--Resposive NavBar-->
-        <nav class="nav_container">
+</head>
 
-            <!--Allocating Top Right Hamburger/X-->
-            <div class="nav_toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+<body>
+    
+    <!--Resposive Navbar-->
+    <div class="topnav" id="myTopnav">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/ktpbostonu" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/ktpbostonu?igshid=YmMyMTA2M2" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCnAKU1RtEodVm2EL9m8vyNw" rel="noopener noreferrer" title="Youtube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/company/kappa-theta-pi-lambda-chapter/" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/KappaThetaPiBU" rel="noopener noreferrer" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+    
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">About 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="aboutktp.html">Lambda</a>
+                    <a href="abouthackktp.html">HackKTP</a>
+                </div>
+            </div> 
+            <a href="rush.html">Rush</a>
+            <a href="members.html">Members</a>
+            <a href="contactus.html">Contact</a>
+    
+            <img src="images/KTP Logos/ktplogo.png">
+    
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </a>
+        </div>
+    </div>
 
-            <!--Linking Index Page and Subpages in NavBar-->
-            <ul class="nav_menu">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/EVwqvkNbDvY?si=-RQPfEXQzWKIuBPF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <div class="text_section_1">
+            
+        <h1>Rush KTP this Spring!</h1>
 
-                <li class="nav_item">
-                    <a href="index.html" class="nav_links">Home</a>
-                </li>
+        <p>Discover your path by becoming a part of our brotherhood at Kappa Theta Pi! Your journey towards meaningful connections and unparalleled personal growth begins here. If you're eager to be a member of a community that values leadership, camaraderie, and academic excellence, now is the time to take action. Show us your interest in joining our brotherhood by clicking below and accessing our Rush Interest Form. Your commitment starts here!</p>
 
-                <li class="nav_drop">
-                    <button class="dropbtn">About
-                        <i class="fa fa-caret-down"></i>
-                    </button>
+    </div>
 
-                    <div class="drop_content">
-                        <a href="/aboutus.html" class="nav_links">About Us</a>
-                        <a href="/hackathon.html" class="nav_links">About Hackappathon</a>
-                    </div>
-                </li>
+    <div class="text_image_section">
 
-                <li class="nav_item">
-                    <a href="/rush.html" class="nav_links">Rush</a>
-                </li>
+        <div class="image_section">
 
-                <li class="nav_item">
-                    <a href="/members.html" class="nav_links">Members</a>
-                </li>
+            <img src="images/EBoard Headshots/Evan1.jpg" alt="Evan Lapid">
 
-                <li class="nav_item">
-                    <a href="/contactus.html" class="nav_links">Contact Us</a>
-                </li>
-
-            </ul>
-
-        </nav>
-
-        <div class="rush-image">
-
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/EVwqvkNbDvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        
         </div>
 
-         <section class="dei_container">
+        <div class="text_section">
 
-            <div class="dei_item">
-                
-                <div class="dei_content">
+            <h1>Why Rush KTP?</h1>
 
-                    <header class="dei_header">
+            <p>Dear Prospective Members,</p>
 
-                        <h1>Rush KTP this Fall!</h1>
+            <p>As the Vice President of Membership of Kappa Theta Pi, I invite you to Rush KTP and become part of our exceptional orginization. As the first technology fraternity, we offer unique opportunities for members to develop skills, knowledge, and professional networks. Our community shares a strong passion and commitment for technology and innovation. We prioritize building a strong brotherhood and promoting social activities with members from a multitude of backgrounds. This multidisciplinary membership provides a unique opportunity for members to learn and advance from each other.</p>
+    
+            <p>Sincerely,</p>
+                    
+            <p>Evan Lapid<br> Vice President of Membership 2023</p>
 
-                        <p>Discover your path by becoming a part of our brotherhood at Kappa Theta Pi! Your journey towards meaningful connections and unparalleled personal growth begins here. If you're eager to be a member of a community that values leadership, camaraderie, and academic excellence, now is the time to take action. Show us your interest in joining our brotherhood by clicking below and accessing our Rush Interest Form. Your commitment starts here!</p>
+        </div>
 
-                        <div class="buttons">
-                            <button onclick="window.location.href='https://forms.gle/bHe3YhEmbN4Z16LC8'" class="button">Show Interest</button>
-                        </div>
+    </div>
 
-                    </header>
+    <footer class="footer">
+        <div class="footer_logo_container">
+            <div class="footer_logo"></div>
+        </div>
 
-                </div>
+        <div class="footer_text">
+            <p>© 2023 Kappa Theta Pi Alpha Chapter. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-            </div>
+    <script src="app.js"></script>
+    <script src="apptest.js"></script>
+    <script src="https://kit.fontawesome.com/b7e6b21fa0.js" crossorigin="anonymous"></script>
 
-        </section>
-
-          <section class="pres_container">
-
-            <div class="pres_item">
-
-                <div class="pres_img">
-
-                    <img src="images/EBoard Headshots/Evan 1.jpg" alt="Evan Lapid">
-
-                </div>
-
-            </div>
-
-            <div class="pres_item">
-
-                <div class="pres_content">
-
-                    <header class="pres_header">
-
-                        <h1>Why Rush KTP?</h1>
-
-                        <p>Dear Prospective Members,</p>
-
-                        <p>As the Vice President of Membership of Kappa Theta Pi, I invite you to Rush KTP and become part of our exceptional orginization. As the first technology fraternity, we offer unique opportunities for members to develop skills, knowledge, and professional networks. Our community shares a strong passion and commitment for technology and innovation. We prioritize building a strong brotherhood and promoting social activities with members from a multitude of backgrounds. This multidisciplinary membership provides a unique opportunity for members to learn and advance from each other.</p>
-        
-                        <p>Sincerely,</p>
-                        
-                        <p>Evan Lapid<br> Vice President of Membership 2023</p>
-
-                    </header>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!--Responsive Footer-->
-        <footer class="footer_container">
-
-            <div class="footer_content">
-
-                <section class="social_media">
-
-                    <div class="social_media_wrap">
-
-                        <!--Allocating Space for Footer Logo-->
-                        <div class="footer_logo">
-                            <a href="/" aria-label="Homepage" class="footer_logo_link">Kappa Theta Pi</a>
-                        </div>
-
-                        <!--Allocating Space, Importing FontAwesome Icons, and Linking Social Medias-->
-                        <nav class="social_icons">
-
-                            <li class="social_item">
-                                <a href="https://www.facebook.com/ktpbostonu" rel="noopener noreferrer" class="social_icon_link" title="Facebook">
-                                    <i class="fab fa-facebook" aria-hidden="true"></i>
-                                </a>
-                            </li>
-
-                            <li class="social_item">
-                                <a href="https://instagram.com/ktpbostonu?igshid=YmMyMTA2M2Y" rel="noopener noreferrer" class="social_icon_link" title="Instagram">
-                                    <i class="fab fa-instagram" aria-hidden="true"></i>
-                                </a>
-                            </li>
-
-                            <li class="social_item">
-                                <a href="https://www.youtube.com/channel/UCnAKU1RtEodVm2EL9m8vyNw" rel="noopener noreferrer" class="social_icon_link" title="Youtube">
-                                    <i class="fab fa-youtube" aria-hidden="true"></i>
-                                </a>
-                            </li>
-
-                            <li class="social_item">
-                                <a href="https://www.linkedin.com/company/kappa-theta-pi-lambda-chapter/" rel="noopener noreferrer" class="social_icon_link" title="LinkedIn">
-                                    <i class="fab fa-linkedin" aria-hidden="true"></i>
-                                </a>
-                            </li>
-
-                            <li class="social_item">
-                                <a href="https://twitter.com/KappaThetaPiBU" rel="noopener noreferrer" class="social_icon_link" title="Twitter">
-                                    <i class="fab fa-twitter" aria-hidden="true"></i>
-                                </a>
-                            </li>
-
-                        </nav>
-
-                        <!--Creat Text for Website Rights-->
-                        <p class="website_rights">© 2022 Kappa Theta Pi Lambda Chapter. All Rights Reserved.</p>
-
-                    </div>
-
-                </section>
-
-            </div>
-
-        </footer>
-        
-        <!--Import app.js-->
-        <script src="app.js"></script>
-
-        <!--Import Icons-->
-        <script src="https://kit.fontawesome.com/b7e6b21fa0.js" crossorigin="anonymous"></script>
-
-    </body>
+</body>
 
 </html>

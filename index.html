@@ -2,156 +2,143 @@
 
 <html lang="en">
 
-    <!--Header-->
-    <head>
+<!-- ADD ALT TO IMGS -->
 
-        <!--HTML BoilerPlate-->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kappa Theta Pi: Lambda Chapter</title>
+<head>
 
-        <!--Set Favicon-->
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--Linking styles.css-->
-        <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 
-        <!--Linking Google Fonts API-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital,wght@0,500;0,800;1,800&family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">
+    <!--Linking over to-->
+    <link rel="stylesheet" href="styles.css">
 
-    </head>
+    <!--Tab Title-->
+    <title>KTP: Boston University</title>
 
-    <!--Body-->
-    <body>
-        
-        <!--Resposive NavBar-->
-        <nav class="nav_container">
+</head>
 
-            <!--Allocating Top Right Hamburger/X-->
-            <div class="nav_toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+<body>
+    
+    <!--Resposive Navbar-->
+    <div class="topnav" id="myTopnav">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/ktpbostonu" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/ktpbostonu?igshid=YmMyMTA2M2" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCnAKU1RtEodVm2EL9m8vyNw" rel="noopener noreferrer" title="Youtube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/company/kappa-theta-pi-lambda-chapter/" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/KappaThetaPiBU" rel="noopener noreferrer" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+    
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">About 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="aboutktp.html">Lambda</a>
+                    <a href="abouthackktp.html">HackKTP</a>
+                </div>
+            </div> 
+            <a href="rush.html">Rush</a>
+            <a href="members.html">Members</a>
+            <a href="contactus.html">Contact</a>
+    
+            <img src="images/KTP Logos/ktplogo.png">
+    
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </a>
+        </div>
+    </div>
+
+    <!--Index Hero-->
+    <div class="hero_section">
+
+        <div class="hero_img">
+            <img src="images/KTP Logos/KappaThetaPi-LOGO.png">
+        </div>
+
+    </div>
+
+    <!--Text Section-->
+    <div class="text_section_1">
+        <h1><span style="color: #a3e4a3;">"</span> for the love of technology</h1>
+
+        <p>As the only professional technology fraternity in the nation, we strive to shape the future of technology and foster innovation through our strong community. Our co-ed fraternity not only represents the advancements in technology but also embraces the importance of collaboration and connection in the digital age. We believe that a future world deserves a fraternity of the future that prepares its members for the challenges and opportunities of the ever-evolving technological landscape. Together, we inspire and empower individuals to excel in their technical expertise, leadership skills, and social responsibility, ensuring a bighter future for all.</p>
+    
+        <div class="button_1">
+            <button>
+                <a href="rush.html">join KTP</a>
+            </button>
+        </div>
+    </div>
+
+    <!--2 Horizontal Images-->
+    <div class="horz_images_section">
+        <img src="images/brothers/Tim and Carol.jpg">
+
+        <img src="images/brothers/Workshop 6.jpg">
+    </div>
+
+    <!--Circle Cards-->
+    <div class="jnc_section">
+        <div class="jnc_card">
+            <div class="jnc_circle">
+                <i class="fa-solid fa-right-to-bracket"></i>
             </div>
-
-            <!--Linking Index Page and Subpages in NavBar-->
-            <ul class="nav_menu">
-
-                <li class="nav_item">
-                    <a href="index.html" class="nav_links">Home</a>
-                </li>
-
-                <li class="nav_drop">
-                    <button class="dropbtn">About
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-
-                    <div class="drop_content">
-                        <a href="/aboutus.html" class="nav_links">About Us</a>
-                        <a href="/hackathon.html" class="nav_links">About Hackappathon</a>
-                    </div>
-                </li>
-
-                <li class="nav_item">
-                    <a href="/rush.html" class="nav_links">Rush</a>
-                </li>
-
-                <li class="nav_item">
-                    <a href="/members.html" class="nav_links">Members</a>
-                </li>
-
-                <li class="nav_item">
-                    <a href="/contactus.html" class="nav_links">Contact Us</a>
-                </li>
-
-            </ul>
-
-        </nav>
-
-        <!--index.html Hero Section-->
-        <div class="hero-image">
-
-            <div class="hero-text">
-
-              <h1>Kappa Theta Pi</h1>
-              <h3>KTP</h3>
-
-              <h2>Lambda Chapter @ BU</h2>
-
-              <p>Professional Co-Ed Technology Fraternity</p>
-
+            <div class="jnc_text">
+                <h1><span style="color: #a3e4a3;">!</span>join</h1>
+                <p>get ahead in tech and join a community of future focused people</p>
             </div>
-          </div>
+        </div>
 
-        <!--Responsive Footer-->
-        <footer class="footer_container">
-
-            <div class="footer_content">
-
-                <section class="social_media">
-
-                    <div class="social_media_wrap">
-
-                        <!--Allocating Space for Footer Logo-->
-                        <div class="footer_logo">
-                            <a href="/" aria-label="Homepage" class="footer_logo_link">Kappa Theta Pi</a>
-                        </div>
-
-                        <!--Allocating Space, Importing FontAwesome Icons, and Linking Social Medias-->
-                        <nav class="social_icons">
-
-                            <li class="social_item">
-                                <a href="https://www.facebook.com/ktpbostonu" rel="noopener noreferrer" class="social_icon_link" title="Facebook">
-                                    <i class="fab fa-facebook" aria-hidden="true"></i>
-                                </a>
-                            </li>
-
-                            <li class="social_item">
-                                <a href="https://instagram.com/ktpbostonu?igshid=YmMyMTA2M2Y" rel="noopener noreferrer" class="social_icon_link" title="Instagram">
-                                    <i class="fab fa-instagram" aria-hidden="true"></i>
-                                </a>
-                            </li>
-
-                            <li class="social_item">
-                                <a href="https://www.youtube.com/channel/UCnAKU1RtEodVm2EL9m8vyNw" rel="noopener noreferrer" class="social_icon_link" title="Youtube">
-                                    <i class="fab fa-youtube" aria-hidden="true"></i>
-                                </a>
-                            </li>
-
-                            <li class="social_item">
-                                <a href="https://www.linkedin.com/company/kappa-theta-pi-lambda-chapter/" rel="noopener noreferrer" class="social_icon_link" title="LinkedIn">
-                                    <i class="fab fa-linkedin" aria-hidden="true"></i>
-                                </a>
-                            </li>
-
-                            <li class="social_item">
-                                <a href="https://twitter.com/KappaThetaPiBU" rel="noopener noreferrer" class="social_icon_link" title="Twitter">
-                                    <i class="fab fa-twitter" aria-hidden="true"></i>
-                                </a>
-                            </li>
-
-                        </nav>
-
-                        <!--Creat Text for Website Rights-->
-                        <p class="website_rights">© 2022 Kappa Theta Pi Lambda Chapter. All Rights Reserved.</p>
-
-                    </div>
-
-                </section>
-
+        <div class="jnc_card">
+            <div class="jnc_circle">
+                <i class="fa-solid fa-newspaper"></i>  
             </div>
+            <div class="jnc_text">
+                <h1><span style="color: #a3e4a3;">//</span>news</h1>
+                <p>stay up to date on KTP rush and open events</p>
+            </div>
+        </div>
 
-        </footer>
-        
-        <!--Import app.js-->
-        <script src="app.js"></script>
+        <div class="jnc_card">
+            <div class="jnc_circle">
+                <i class="fa-solid fa-address-book"></i>
+            </div>
+            <div class="jnc_text">
+                <h1><span style="color: #a3e4a3;">#</span>contact</h1>
+                <p>contact us for information or for any question or concernse</p>
+            </div>
+        </div>
+    </div>
 
-        <!--Import Icons-->
-        <script src="https://kit.fontawesome.com/b7e6b21fa0.js" crossorigin="anonymous"></script>
+    <!--Footer 'Hero'-->
+    <div class="f_hero_section"></div>
 
-    </body>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer_logo_container">
+            <div class="footer_logo"></div>
+        </div>
+
+        <div class="footer_text">
+            <p>© 2023 Kappa Theta Pi Alpha Chapter. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="apptest.js"></script>
+    <script src="https://kit.fontawesome.com/b7e6b21fa0.js" crossorigin="anonymous"></script>
+
+</body>
 
 </html>

@@ -2,201 +2,113 @@
 
 <html lang="en">
 
-    <!--Header-->
-    <head>
+<!-- ADD ALT TO IMGS -->
 
-        <!--HTML BoilerPlate-->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kappa Theta Pi: Lambda Chapter</title>
+<head>
 
-        <!--Set Favicon-->
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--Linking styles.css-->
-        <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 
-        <!--Linking Google Fonts API-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital,wght@0,500;0,800;1,800&family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">
+    <!--Linking over to-->
+    <link rel="stylesheet" href="styles.css">
 
-    </head>
+    <!--Tab Title-->
+    <title>KTP: Boston University</title>
 
-    <!--Body-->
-    <body>
-        
-        <!--Resposive NavBar-->
-        <nav class="nav_container">
+</head>
 
-            <!--Allocating Top Right Hamburger/X-->
-            <div class="nav_toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-
-            <!--Linking Index Page and Subpages in NavBar-->
-            <ul class="nav_menu">
-
-                <li class="nav_item">
-                    <a href="index.html" class="nav_links">Home</a>
-                </li>
-
-                <li class="nav_drop">
-                    <button class="dropbtn">About
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-
-                    <div class="drop_content">
-                        <a href="/aboutus.html" class="nav_links">About Us</a>
-                        <a href="/hackathon.html" class="nav_links">About Hackappathon</a>
-                    </div>
-                </li>
-
-                <li class="nav_item">
-                    <a href="/rush.html" class="nav_links">Rush</a>
-                </li>
-
-                <li class="nav_item">
-                    <a href="/members.html" class="nav_links">Members</a>
-                </li>
-
-                <li class="nav_item">
-                    <a href="/contactus.html" class="nav_links">Contact Us</a>
-                </li>
-
-            </ul>
-
-        </nav>
-
-        <section class="pres_container">
-
-            <div class="pres_item">
-
-                <div class="pres_img">
-
-                    <img src="images/betterBULogo.png" style="border-radius: 10px;" alt="Tye Robison and Paul Lee">
-
+<body>
+    
+    <!--Resposive Navbar-->
+    <div class="topnav" id="myTopnav">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/ktpbostonu" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/ktpbostonu?igshid=YmMyMTA2M2" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCnAKU1RtEodVm2EL9m8vyNw" rel="noopener noreferrer" title="Youtube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/company/kappa-theta-pi-lambda-chapter/" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/KappaThetaPiBU" rel="noopener noreferrer" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+    
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">About 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="aboutktp.html">Lambda</a>
+                    <a href="abouthackktp.html">HackKTP</a>
                 </div>
+            </div> 
+            <a href="rush.html">Rush</a>
+            <a href="members.html">Members</a>
+            <a href="contactus.html">Contact</a>
+    
+            <img src="images/KTP Logos/ktplogo.png">
+    
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </a>
+        </div>
+    </div>
 
-            </div>
+    <div class="text_image_section">
 
-            <div class="pres_item">
+        <div class="image_section">
 
-                <div class="pres_content">
+            <img src="images/betterBULogo.png" alt="Evan Lapid">
 
-                    <header class="pres_header">
+        </div>
 
-                        <h1>Students</h1>
+        <div class="text_section">
 
-                        <p>For students interested in attending our company events, they are open to all BU students, unless indicated otherwise. Please sign up for our mailing list to stay up to date with what events we offer. If you would like more information or have questions about rush, please contact us at ktpbostonu@gmail.com.</p>
+            <h1>Students</h1>
 
-                    </header>
+            <p>Hello, prospectives! We're thrilled that you're interested in learning more about our fraternity, and we're here to assist you every step of the way. If you have any questions about our organization, events, or how to get involved, please don't hesitate to reach out. Our dedicated team is ready to provide you with all the information you need to make an informed decision about joining us. Feel free to drop us an email at ktpbostonu@gmail.com, and we'll get back to you as soon as possible. We look forward to connecting with you and sharing the incredible experiences our fraternity has to offer.</p>
 
-                </div>
+        </div>
 
-            </div>
+    </div>
 
-        </section>
+    <div class="text_image_section">
 
-        <section class="hist_container">
+        <div class="text_section">
 
-            <div class="hist_item">
-                
-                <div class="hist_content">
+            <h1>Companies</h1>
 
-                    <header class="hist_header">
+            <p>Hello, all companies and potential collaborators! Thank you for considering partnering with us. We believe in the power of strong partnerships to drive innovation and success. If you are interested in exploring opportunities for collaboration, sponsorship, or any other business-related inquiries, please don't hesitate to contact us. We are eager to discuss how we can work together to achieve mutual goals and create meaningful impact. Please reach out to us at your convenience via email at ktpbostonu@gmail.com, and our dedicated team will be delighted to connect with you. Let's embark on a journey of growth and prosperity together.</p>
 
-                        <h1>Companies and Sponsors</h1>
+        </div>
 
-                        <p>We are always looking to work with companies to put up recruitment events on campus such as tech talks, information sessions, and networking sessions. Such recruitment events help create relationships between students and recruiters in a smaller, more relaxed setting. For companies interested in hosting an event with us or would like more information, please contact us at ktpbostonu@gmail.com.</p>
+        <div class="image_section" style="margin-left: 30px;">
 
-                    </header>
+            <img src="images/Companies.png" alt="Evan Lapid">
 
-                </div>
+        </div>
 
-            </div>
+    </div>
 
-            <div class="hist_item">
+    <footer class="footer">
+        <div class="footer_logo_container">
+            <div class="footer_logo"></div>
+        </div>
 
-                <div class="hist_img">
+        <div class="footer_text">
+            <p>© 2023 Kappa Theta Pi Alpha Chapter. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-                    <img src="images/Companies.png" alt="Tye Robison and Paul Lee">
+    <script src="app.js"></script>
+    <script src="apptest.js"></script>
+    <script src="https://kit.fontawesome.com/b7e6b21fa0.js" crossorigin="anonymous"></script>
 
-                </div>
-
-            </div>
-
-        </section>
-
-        <!--Responsive Footer-->
-        <footer class="footer_container">
-
-            <div class="footer_content">
-
-                <section class="social_media">
-
-                    <div class="social_media_wrap">
-
-                        <!--Allocating Space for Footer Logo-->
-                        <div class="footer_logo">
-                            <a href="/" aria-label="Homepage" class="footer_logo_link">Kappa Theta Pi</a>
-                        </div>
-
-                        <!--Allocating Space, Importing FontAwesome Icons, and Linking Social Medias-->
-                        <nav class="social_icons">
-
-                            <li class="social_item">
-                                <a href="https://www.facebook.com/ktpbostonu" rel="noopener noreferrer" class="social_icon_link" title="Facebook">
-                                    <i class="fab fa-facebook" aria-hidden="true"></i>
-                                </a>
-                            </li>
-
-                            <li class="social_item">
-                                <a href="https://instagram.com/ktpbostonu?igshid=YmMyMTA2M2Y" rel="noopener noreferrer" class="social_icon_link" title="Instagram">
-                                    <i class="fab fa-instagram" aria-hidden="true"></i>
-                                </a>
-                            </li>
-
-                            <li class="social_item">
-                                <a href="https://www.youtube.com/channel/UCnAKU1RtEodVm2EL9m8vyNw" rel="noopener noreferrer" class="social_icon_link" title="Youtube">
-                                    <i class="fab fa-youtube" aria-hidden="true"></i>
-                                </a>
-                            </li>
-
-                            <li class="social_item">
-                                <a href="https://www.linkedin.com/company/kappa-theta-pi-lambda-chapter/" rel="noopener noreferrer" class="social_icon_link" title="LinkedIn">
-                                    <i class="fab fa-linkedin" aria-hidden="true"></i>
-                                </a>
-                            </li>
-
-                            <li class="social_item">
-                                <a href="https://twitter.com/KappaThetaPiBU" rel="noopener noreferrer" class="social_icon_link" title="Twitter">
-                                    <i class="fab fa-twitter" aria-hidden="true"></i>
-                                </a>
-                            </li>
-
-                        </nav>
-
-                        <!--Creat Text for Website Rights-->
-                        <p class="website_rights">© 2022 Kappa Theta Pi Lambda Chapter. All Rights Reserved.</p>
-
-                    </div>
-
-                </section>
-
-            </div>
-
-        </footer>
-        
-        <!--Import app.js-->
-        <script src="app.js"></script>
-
-        <!--Import Icons-->
-        <script src="https://kit.fontawesome.com/b7e6b21fa0.js" crossorigin="anonymous"></script>
-
-    </body>
+</body>
 
 </html>
