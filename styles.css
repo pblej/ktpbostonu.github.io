@@ -456,7 +456,7 @@ body {
     display: flex;
     flex-direction: row;
     width: 70%;
-    text-align: justify; /* delete eventually, but good for seeing box sizing */
+    /* text-align: justify; delete eventually, but good for seeing box sizing */
 }
 
 /* Text Section in Text and Image Section */
@@ -591,19 +591,18 @@ body {
     .text_image_section {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        margin: 60px auto;
         width: 70%;
     }
 
     /*Text Section in Text and Image Section*/
     .text_section {
-        max-width: 100%;
+        width: 100%;
     }
 
     .text_section h1 {
         font-size: 40px;
         color: #234c8a;
+        text-align: center;
     }
 
     .text_section p {
@@ -613,7 +612,7 @@ body {
 
     /*Image Section in Text and Image Section*/
     .image_section {
-        max-width: 100%;
+        width: 100%;
     }
 
     .image_section img {
