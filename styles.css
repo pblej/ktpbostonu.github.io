@@ -449,18 +449,19 @@ body {
     background-color: #234c8a;
 }
 
-/*Text and Image Section*/
+/*Text and Image Section - WYATT VERSION*/
+/* ideas: use <float: left/right;> or maybe <flex: 1> in some way */
 .text_image_section {
+    margin: 60px auto;
     display: flex;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 60px;
+    flex-direction: row;
+    width: 70%;
+    text-align: justify; /* delete eventually, but good for seeing box sizing */
 }
 
-/*Text Section in Text and Image Section*/
+/* Text Section in Text and Image Section */
 .text_section {
-    max-width: 45%;
+    width: 50%;
 }
 
 .text_section h1 {
@@ -471,18 +472,23 @@ body {
 .text_section p {
     font-size: 16px;
     font-weight: 600;
+    overflow-wrap: break-word;
 }
 
-/*Image Section in Text and Image Section*/
+/* Image Section in Text and Image Section */
 .image_section {
-    margin-right: 75px;
-    max-width: 45%;
+    padding-right: 75px;
+    position: relative; /* Needed for percentage-based max-height */
+    width: 50%;
+    display: flex;
 }
 
 .image_section img {
     border-radius: 15px;
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%; /* Allow the image to be no taller than its container */
 }
+
 
 /*Cards Section*/
 /*Cards Title*/
@@ -579,6 +585,41 @@ body {
         font-size: 1rem;
         margin-top: 5px;
         margin-bottom: 10px;
+    }
+
+    /*Text and Image Section*/
+    .text_image_section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 60px auto;
+        width: 70%;
+    }
+
+    /*Text Section in Text and Image Section*/
+    .text_section {
+        max-width: 100%;
+    }
+
+    .text_section h1 {
+        font-size: 40px;
+        color: #234c8a;
+    }
+
+    .text_section p {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    /*Image Section in Text and Image Section*/
+    .image_section {
+        max-width: 100%;
+    }
+
+    .image_section img {
+        border-radius: 15px;
+        width: 100%;
+        margin: auto;
     }
 }
 /*End of AboutKTP.html*/
