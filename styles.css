@@ -449,26 +449,23 @@ body {
     background-color: #234c8a;
 }
 
-/*Text and Image Section - WYATT VERSION*/
-/* ideas: use <float: left/right;> or maybe <flex: 1> in some way */
+/*Text and Image Section - WYATT VERSION */
 .text_image_section {
-    margin: 4em;
-    /* width: 100%;
-    height: 50%; */
-    /* margin: 60px auto; */
+    width: 70%;
+    margin: 60px auto;
+    font-family: 'Open Sans', sans-serif;
     /* display: flex;
     flex-direction: column; */
-    /* height: 50vh; *;
-    /* text-align: justify; delete eventually, but good for seeing box sizing */
+    /* height: 50vh; */
 }
 
 /* Text Section in Text and Image Section */
-.text_section {
+/* .text_section {
     width: 50%;
     height: 20%;
     text-wrap: wrap;
     overflow: wrap;
-}
+} */
 
 .text_section h1 {
     font-size: 40px;
@@ -498,6 +495,12 @@ body {
     max-height: 100%; /* Allow the image to be no taller than its container */
 }
 
+/* fixes co-president image proportions on smaller size */
+/* @media screen and (max-width: 768px) {
+    .image_section {
+        width: 90%;
+    }
+} */
 
 /*Cards Section*/
 /*Cards Title*/
@@ -563,13 +566,13 @@ body {
 }
 
 /*Responsive Pillars*/
-/* @media screen and (max-width: 768px) { */
-    /* .pillars-cards-container {
+@media screen and (max-width: 768px) {
+    .pillars-cards-container {
         flex-direction: column;
         align-items: center;
-    } */
+    }
 
-    /* .pillar_title h1 {
+    .pillar_title h1 {
         text-align: center;
         display: block;
     }
@@ -594,44 +597,15 @@ body {
         font-size: 1rem;
         margin-top: 5px;
         margin-bottom: 10px;
-    } */
+    }
 
     /*Text and Image Section*/
-    /* .text_image_section {
-        display: flex;
-        flex-direction: row; */
-        /* flex-wrap: wrap; */
-        /* width: 70%; */
-    /* } */
 
     /*Text Section in Text and Image Section*/
-    /* .text_section {
-        width: 100%;
+    .image_section {
+        width: 90%;
     }
-
-    .text_section h1 {
-        font-size: 40px;
-        color: #234c8a;
-        text-align: center;
-    }
-
-    .text_section p {
-        font-size: 16px;
-        font-weight: 600;
-    } */
-
-    /*Image Section in Text and Image Section*/
-    /* .image_section {
-        float: left;
-        width: 50%;
-    }
-
-    .image_section img {
-        border-radius: 15px;
-        width: 100%;
-        margin: auto;
-    } */
-/* } */
+}
 /*End of AboutKTP.html*/
 
 /*AboutHackKTP.html*/
