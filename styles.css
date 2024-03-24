@@ -883,3 +883,119 @@ body {
     text-align: center;
     color: #234c8a;
 }
+
+/* events section */
+.events_section h1 {
+    text-align: center;
+    color: #234c8a;
+}
+.events_catalog {
+    text-align: center;
+}
+.KTPxPCTProfPanel {
+    margin: 5vh 10vw;
+    display: flex;
+    flex-direction: column;
+    color: #234c8a;
+}
+.KTPxPCTProfPanel_about_ktp {
+    width: 45%;
+    margin-right: 5%;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+}
+.KTPxPCTProfPanel_about_pct {
+    width: 45%;
+    margin-right: 5%;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+}
+.KTPxPCTProfPanel_about {
+    display: flex;
+    flex-direction: row;
+}
+.KTPxPCTProfPanel_panel{
+    /* a border around the panelists might be kinda nice but also commenting it out makes sense */
+    border-radius: 10px;
+}
+.KTPxPCTProfPanel_panel h2 {
+    text-align: center;
+}
+.KTPxPCTProfPanel_panel_container {
+    color: #234c8a;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* changed from center */
+    align-items: flex-start; /* changed from center */
+}
+
+.KTPxPCTProfPanel_panelist_card_KTP {
+    background-color: #234c8a;
+    color: whitesmoke;
+    width: 30%;
+    margin: 15px;
+    border-radius: 10px;
+}
+.KTPxPCTProfPanel_panelist_card_KTP img {
+    display: block;
+    width: 90%;
+    margin: 5% auto;
+}
+.KTPxPCTProfPanel_panelist_card_KTP p {
+    width: 90%;
+    margin-left: 5%;
+}
+.KTPxPCTProfPanel_panelist_card_PCT {
+    color: #234c8a;
+    background-color: whitesmoke;
+    width: 30%;
+    margin: 15px;
+    /* margin-bottom: 100px; */
+    border-radius: 10px;
+}
+.KTPxPCTProfPanel_panelist_card_PCT img {
+    display: block;
+    width: 90%;
+    margin: 5% auto;
+}
+.KTPxPCTProfPanel_panelist_card_PCT p {
+    width: 90%;
+    margin-left: 5%;
+}
+
+@media screen and (max-width: 1130px) {
+    .KTPxPCTProfPanel_panelist_card_KTP {
+        width: 40%;
+    }
+    .KTPxPCTProfPanel_panelist_card_PCT {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .KTPxPCTProfPanel_about_ktp {
+        width: 100%;
+        margin: auto 0;
+    }
+    .KTPxPCTProfPanel_about_pct {
+        width: 100%;
+        margin: auto 0;
+    }
+    .KTPxPCTProfPanel_about {
+        display: flex;
+        flex-direction: column;
+    }
+    .KTPxPCTProfPanel_panelist_card_KTP {
+        width: 90%;
+    }
+    .KTPxPCTProfPanel_panelist_card_PCT {
+        width: 90%;
+    }
+}
+
+/* 
+goes from 3 cols to 2 at 1130 pixels wide
+goes from 2 cols to 1 at 
+*/
