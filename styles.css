@@ -928,7 +928,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* changed from center */
-    align-items: flex-start; /* changed from center */
+    align-items: stretch; /* changed from center */
 }
 
 .KTPxPCTProfPanel_panelist_card_KTP {
