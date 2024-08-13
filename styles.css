@@ -320,6 +320,15 @@ body {
     font-size: 60px;
 }
 
+.rush_link {
+    font-size: 48px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #234c8a;
+    margin-bottom: 16px;
+    cursor: pointer;    
+}
+
 .jnc_text h1 {
     color: #131313;
     font-size: 32px;
